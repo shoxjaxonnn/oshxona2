@@ -245,7 +245,6 @@ swiper-slide:nth-last-child(4) {
   font-size: 2rem;
 }
 
-
 /* === STORY MODAL === */
 .story-modal {
   display: none;
@@ -348,6 +347,13 @@ swiper-slide:nth-last-child(4) {
 p {
   font-size: 2rem;
   color: #fff;
+  cursor: pointer;
+}
+.link-icons .oshxona-icon {
+  max-width: 30px;
+  width: 100%;
+  height: 30px;
+  border-radius: 50%;
   cursor: pointer;
 }
 .roww {
@@ -492,3 +498,72 @@ p {
   display: block;
 }
 /* =====================keye panel==================== */
+#keye-panel {
+  height: 270vh;
+}
+#keye-panel img {
+  max-width: 230px;
+  width: 100%;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.keye-img {
+  overflow: hidden;
+  top: 0;
+  position: sticky; /* Element scroll qilinganda yuqoriga yopishib qoladi */
+  z-index: -1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/*=================================== keye card======================================== */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  max-width: 240px;
+  width: 100%;
+  box-shadow: 1px 1px 10px rgb(80, 75, 75);
+}
+
+.cart {
+  margin-top: 20px;
+}
+.fastfood-section h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  background-color: var(--bg-color-red);
+  padding: 10px;
+}
+.card button{
+  border: none;
+  padding: 10px;
+  background-color: var(--bg-color-red);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.7rem;
+}
+.card img{
+  max-width: 80px;
+  height: 80px;
+  width: 100%;
+}
+/* ====================shopping cart=================== */
+.cart ul{
+  list-style: none;
+}
+.cart li{
+  font-size: 1.8rem;
+}
+

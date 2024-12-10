@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keye x Student oshxonasi</title>
+    <!-- manifest js -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icon.92.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
 
     <!-- Bootstrap CSS -->
     <link
@@ -215,35 +219,35 @@
           <div class="container">
             <div class="blur-wrapper">
               <div class="auto-blur">
-                <img src="/images/bishteks.jpg" alt="img herer" />
+                <img src="images/bishteks.jpg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/bishteks2.jpeg" alt="img herer" />
+                <img src="images/bishteks2.jpeg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/bishteks2.jpeg" alt="img herer" />
+                <img src="images/bishteks2.jpeg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/bishteks2.jpeg" alt="img herer" />
+                <img src="images/bishteks2.jpeg" alt="img herer" />
               </div>
 
               <div class="auto-blur">
-                <img src="/images/desert.jpg" alt="img herer" />
+                <img src="images/desert.jpg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/desert.jpg" alt="img herer" />
+                <img src="images/desert.jpg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/desert.jpg" alt="img herer" />
+                <img src="images/desert.jpg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/desert.jpg" alt="img herer" />
+                <img src="images/desert.jpg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/desert.jpg" alt="img herer" />
+                <img src="images/desert.jpg" alt="img herer" />
               </div>
               <div class="auto-blur">
-                <img src="/images/qaynatma-sho'rva.jpg" alt="img herer" />
+                <img src="images/qaynatma-sho'rva.jpg" alt="img herer" />
               </div>
             </div>
           </div>
@@ -253,16 +257,67 @@
 
     <!-- =====================================Keye Panel======================== -->
     <div id="keye-panel" class="tab-panel">
-      <div class="container">
-       
+      <div class="keye-img">
+        <img src="images/pizza-bg.png" alt="pizza here" id="pizza-img" />
+      </div>
+      <div class="fastfood-section">
+        <h2>Bugungi kunda sizni qarshi oladi...</h2>
+        <div class="card-container">
+          <!-- Card Template -->
+          <div class="card">
+            <img src="images/keye-burger.png" alt="Burger" />
+            <h3>Keye-Burger <br />narxi:29.000</h3>
+            <button onclick="addToCart('Burger', 29.000)">Qo'shish+</button>
+          </div>
+
+          <div class="card">
+            <img src="images/keye-pizza.png" alt="Pizza" />
+            <h3>Pitsa <br />narxi:100.000</h3>
+            <button onclick="addToCart('Pizza', 100.000)">Qo'shish+</button>
+          </div>
+
+          <div class="card">
+            <img src="images/keye-fries.png" alt="Fries" />
+            <h3>
+              Fri <br />
+              narxi: 15.000
+            </h3>
+            <button onclick="addToCart('Fries', 15.000)">Qo'shish+</button>
+          </div>
+
+          <div class="card">
+            <img src="images/keye-pizza.png" alt="Pizza" />
+            <h3>Pitsa <br />narxi:100.000</h3>
+            <button onclick="addToCart('Pizza', 100.000)">Qo'shish+</button>
+          </div>
+
+          <div class="card">
+            <img src="images/keye-fries.png" alt="Fries" />
+            <h3>
+              Fri <br />
+              narxi: 15.000
+            </h3>
+            <button onclick="addToCart('Fries', 15.000)">Qo'shish+</button>
+          </div>
+
+          <div class="card">
+            <img src="images/keye-burger.png" alt="Burger" />
+            <h3>Keye-Burger <br />narxi:29.000</h3>
+            <button onclick="addToCart('Burger', 29.000)">Qo'shish+</button>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Profil Panel -->
     <div id="profil-panel" class="tab-panel">
       <div class="container">
-        <h2>Profil</h2>
-        <p>Profil bo'limi mazmuni.</p>
+        <!-- Cart Section -->
+        <div class="cart">
+          <h3>Siz bugun sotib olmoqchisiz..</h3>
+          <ul id="cart-items"></ul>
+          <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
       </div>
     </div>
 
@@ -272,11 +327,15 @@
         <div class="container">
           <div class="roww footer-roww">
             <div
-              class="savat d-flex flex-column align-items-center link-icons"
+              class="bosh sahifa d-flex flex-column align-items-center link-icons"
               data-target="savat-panel"
             >
-              <i class="fa-solid fa-basket-shopping"></i>
-              <p class="tab-button">savat</p>
+              <img
+                src="images/oshxona-logo.jpg"
+                alt="logo here"
+                class="oshxona-icon"
+              />
+              <p class="tab-button">Oshxona</p>
             </div>
 
             <div
@@ -296,7 +355,7 @@
               data-target="profil-panel"
             >
               <i class="fa-solid fa-user"></i>
-              <p class="tab-button">profil</p>
+              <p class="tab-button">savat</p>
             </div>
           </div>
         </div>
@@ -305,6 +364,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="app.js"></script>
     <script src="script.js" defer></script>
   </body>
 </html>
