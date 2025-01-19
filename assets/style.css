@@ -39,15 +39,8 @@ html {
 a {
   text-decoration: none;
 }
-.little-wrapper{
-  max-width: 900px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
+
 
 /* === UTILITY CLASSES === */
 .container {
@@ -383,16 +376,7 @@ p {
   left: 0; /* left: 0 qo'shing */
   width: 100%;
   z-index: 1;
-  /* Mobile qurilmalar uchun qo'shimcha sozlamalar */
-  max-width: 900px; /* Maksimal kenglik */
-  margin: 0 auto; /* Markazga tekislash */
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   padding: 10px;
-  left: 0;
-  right: 0;
-  margin-left: auto; 
-  margin-right: auto;
 }
 .auto-blur {
   animation: autoBlurAnimation linear both;
