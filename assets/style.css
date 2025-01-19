@@ -93,6 +93,7 @@ a {
   cursor: pointer;
   max-width: 70px;
   width: 100%;
+  display: none;
 }
 
 .download i {
@@ -317,7 +318,7 @@ swiper-slide:nth-last-child(4) {
   .download {
     flex-direction: row;
     gap: 10px;
-    margin-left: 230px;
+    margin-left: 530px;
   }
 
   .logo {
