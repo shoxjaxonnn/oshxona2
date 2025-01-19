@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Update Timer
   function updateTimeLeft() {
-    const now = new Date();
-    const targetTime = new Date();
-    targetTime.setHours(12, 0, 0, 0);
+  const now = new Date()
+  const targetTime = new Date()
+  targetTime.setHours(12 , 0 , 0 , 0)
 
     if (now > targetTime) {
       targetTime.setDate(targetTime.getDate() + 1);
@@ -152,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pizzaImg.style.transform = `rotate(${rotation}deg)`;
   });
 // ===================================savatga qoshish================================
+
 // Savatni boshqarish uchun massiv
 let cart = [];
 let total = 0;
@@ -200,6 +201,7 @@ function removeFromCart(index) {
 
 // Global funksiyani export qilish
 window.addToCart = addToCart;
+// alert
 
 
 

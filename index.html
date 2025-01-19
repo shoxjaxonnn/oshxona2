@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/webp">
+    <title>Student oshxonasi</title>
+    <!-- manifest js -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="./assets/images/icon.92.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <!-- Navbar -->
+      <div class="little-wrapper">
+        <div class="tab-content">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-wrapper">
+                <!-- Header Title -->
+                <div class="header-title">
+                  <img
+                    src="./assets/images/logo.webp"
+                    alt="Kokand Universities logo"
+                    class="logo"
+                  />
+
+                  <p class="paragraph">
+                    Qo'qon Universiteti<br />Andijon filiali
+                  </p>
+                </div>
+
+                <!-- Download Section -->
+                <div class="download">
+                  <i class="fa-solid fa-arrow-down-long fa-bounce"></i>
+                  <p>Yuklab olish</p>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="tab-panel active" id="savat-panel">
+            <!-- Main Content -->
+            <main>
+              <div class="hero-section">
+                <div class="container">
+                  <!-- Stories Section -->
+                  <div class="stories">
+                    <div class="stories-section">
+                      <div class="story-circle" onclick="openStory()">
+                        <img
+                          src="./assets/images/keye-logo.jpg"
+                          alt="Profile Picture"
+                          class="profile-pic"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="stories-section">
+                      <div class="story-circle" onclick="openStory()">
+                        <img
+                          src="./assets/images/oshxona-logo.jpg"
+                          alt="Profile Picture"
+                          class="profile-pic"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="stories-section">
+                      <div class="story-circle" onclick="openStory()">
+                        <img
+                          src="./assets/images/logo.webp"
+                          alt="Profile Picture"
+                          class="profile-pic"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="stories-section">
+                      <div class="story-circle">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+
+                    <!-- Fullscreen Story Modal -->
+                    <div id="story-modal" class="story-modal">
+                      <div class="story-content">
+                        <div class="progress-bar">
+                          <div class="progress"></div>
+                        </div>
+                        <iframe
+                          id="story-video"
+                          class="story-video"
+                          src="https://player.vimeo.com/video/1036464593?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                          width="1072"
+                          height="1920"
+                          frameborder="0"
+                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                          title="pro-boronov"
+                        ></iframe>
+                      </div>
+                      <button class="close-button" onclick="closeStory()">
+                        ×
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Search Input -->
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Qidiring..."
+                      aria-label="Qidiring..."
+                      aria-describedby="input-group-right"
+                    />
+                    <i
+                      class="input-group-text fa fa-search"
+                      id="input-group-right"
+                    ></i>
+                  </div>
+
+                  <!-- Daily Menu Section -->
+                  <section id="section1">
+                    <div class="container">
+                      <!-- Heading -->
+                      <div class="daily-menu">
+                        <h1>Bugungi <span>Ommaboq ovqatlar...</span></h1>
+                      </div>
+
+                      <!-- Swiper Section -->
+                      <swiper-container
+                        class="mySwiper"
+                        space-between="30"
+                        centered-slides="true"
+                        autoplay-delay="2500"
+                        autoplay-disable-on-interaction="false"
+                      >
+                        <swiper-slide
+                          ><img
+                            src="./assets/images/oshxona-logo.jpg"
+                            alt="Amlet"
+                        /></swiper-slide>
+                        <swiper-slide
+                          ><img src="./assets/images/bishteks.jpg" alt="Amlet"
+                        /></swiper-slide>
+                        <swiper-slide
+                          ><img
+                            src="./assets/images/bishteks2.jpeg"
+                            alt="Chuchvara"
+                        /></swiper-slide>
+                        <swiper-slide>
+                          <h1>Didingizni biz bilan hayajonlantiring!</h1>
+                        </swiper-slide>
+                        <swiper-slide
+                          ><img src="./assets/images/dimlama.jpg" alt="Mastava"
+                        /></swiper-slide>
+                        <swiper-slide
+                          ><img src="./assets/images/sho'rva1.jpg" alt="Set 4"
+                        /></swiper-slide>
+                        <swiper-slide
+                          ><img
+                            src="./assets/images/dimlama2.jpg"
+                            alt="Sho'rva"
+                        /></swiper-slide>
+                      </swiper-container>
+
+                      <!-- Timer Section -->
+                      <div class="timer">
+                        <h1>
+                          Dars Boshlanishiga:
+                          <i class="fa-solid fa-circle-exclamation"></i>
+                        </h1>
+                        <h2 id="time-left">Hisoblanmoqda...</h2>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <hr />
+              </div>
+            </main>
+            <!-- ========================================== -->
+            <section>
+              <div class="marquee-container">
+                <div class="marquee">
+                  <div class="box-text">
+                    <h3></h3>
+                  </div>
+                  <div class="box-text">
+                    <h3></h3>
+                  </div>
+                  <div class="box-text">
+                    <h3></h3>
+                  </div>
+                  <div class="box-text">
+                    <h3></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="blur-wrapper">
+                  <div class="auto-blur">
+                    <img src="./assets/images/bishteks.jpg" alt="img herer" />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/bishteks2.jpeg" alt="img herer" />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/desert.jpg" alt="img herer" />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/dimlama.jpg" alt="img herer" />
+                  </div>
+
+                  <div class="auto-blur">
+                    <img
+                      src="./assets/images/qaynatma-sho'rva.jpg"
+                      alt="img herer"
+                    />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/desert.jpg" alt="img herer" />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/bishteks2.jpeg" alt="img herer" />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/bishteks.jpg" alt="img here" />
+                  </div>
+                  <div class="auto-blur">
+                    <img src="./assets/images/desert.jpg" alt="img herer" />
+                  </div>
+                  <div class="auto-blur">
+                    <img
+                      src="./assets/images/qaynatma-sho'rva.jpg"
+                      alt="img herer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- =====================================Keye Panel======================== -->
+        <div id="keye-panel" class="tab-panel">
+          <div class="keye-img">
+            <img
+              src="./assets/images/pizza-bg.png"
+              alt="pizza here"
+              id="pizza-img"
+            />
+          </div>
+          <div class="fastfood-section">
+            <h2>Bugungi kunda sizni qarshi oladi...</h2>
+            <div class="card-container">
+              <!-- Card Template -->
+              <div class="card">
+                <img src="./assets/images/keye-burger.png" alt="Burger" />
+                <h3>Keye-Burger <br />narxi:29.000</h3>
+                <button onclick="addToCart('Burger', 29.000)">Qo'shish+</button>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/keye-pizza.png" alt="Pizza" />
+                <h3>Pitsa <br />narxi:100.000</h3>
+                <button onclick="addToCart('Pizza', 100.000)">Qo'shish+</button>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/keye-fries.png" alt="Fries" />
+                <h3>
+                  Fri <br />
+                  narxi: 15.000
+                </h3>
+                <button onclick="addToCart('Fries', 15.000)">Qo'shish+</button>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/keye-pizza.png" alt="Pizza" />
+                <h3>Pitsa <br />narxi:100.000</h3>
+                <button onclick="addToCart('Pizza', 100.000)">Qo'shish+</button>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/keye-fries.png" alt="Fries" />
+                <h3>
+                  Fri <br />
+                  narxi: 15.000
+                </h3>
+                <button onclick="addToCart('Fries', 15.000)">Qo'shish+</button>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/keye-burger.png" alt="Burger" />
+                <h3>Keye-Burger <br />narxi:29.000</h3>
+                <button onclick="addToCart('Burger', 29.000)">Qo'shish+</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profil Panel -->
+        <div id="profil-panel" class="tab-panel">
+          <div class="container">
+            <!-- Cart Section -->
+            <div class="cart">
+              <h3>Siz bugun sotib olmoqchisiz..</h3>
+              <ul id="cart-items"></ul>
+              <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------- -->
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="container">
+            <div class="roww footer-roww">
+              <div
+                class="bosh sahifa d-flex flex-column align-items-center link-icons"
+                data-target="savat-panel"
+              >
+                <img
+                  src="./assets/images/oshxona-logo.jpg"
+                  alt="logo here"
+                  class="oshxona-icon"
+                />
+                <p class="tab-button"></p>
+              </div>
+
+              <div
+                class="keye d-flex flex-column align-items-center link-icons"
+                data-target="keye-panel"
+              >
+               <div class="bubble">
+                <img
+                src="./assets/images/keye-logo.jpg"
+                alt="keye-logo"
+                class="keye-logo-footer"
+              />
+              <p class="tab-button"></p>
+               </div>
+              </div>
+
+              <div
+                class="profil d-flex flex-column align-items-center link-icons"
+                data-target="profil-panel"
+              >
+              <i class="fa-solid fa-basket-shopping"></i>
+                <p class="tab-button"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./assets/app.js"></script>
+    <script src="./assets/script.js" defer></script>
+  </body>
+</html>
